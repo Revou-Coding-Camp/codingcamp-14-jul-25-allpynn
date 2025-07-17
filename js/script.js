@@ -82,10 +82,26 @@ document.addEventListener("DOMContentLoaded", function () {
   const dateInput = document.getElementById("date");
   const today = new Date().toISOString().split("T")[0];
   dateInput.value = today;
+});
+const submitButton = document.getElementById("submit-name");
+const nameInput = document.getElementById("name-input");
+const nameModal = document.getElementById("name-modal");
 
-  // Set user name with JavaScript
-  const userName = "Alvin";
+submitButton.addEventListener("click", () => {
+  const userName = nameInput.value.trim();
+
+  if (userName === "") {
+    alert("Nama tidak boleh kosong.");
+    return;
+  }
+
   userNameSpan.textContent = userName;
+
+  // Tutup modal
+  nameModal.classList.add("hidden");
+
+  // Tampilkan hasil
+  formResults.classList.remove("hidden");
 });
 
 // Mobile menu toggle
