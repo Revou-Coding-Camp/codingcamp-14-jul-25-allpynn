@@ -729,9 +729,192 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-8">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-right">
-        <p class="text-gray-400">Created By AlvinKhoirul</p>
+    <footer
+      class="bg-gray-900 text-gray-300 pt-16 pb-8 relative overflow-hidden"
+    >
+      <!-- Background decorative elements -->
+      <div class="absolute inset-0 opacity-5">
+        <div
+          class="absolute top-10 left-10 w-32 h-32 bg-blue-500 rounded-full blur-3xl"
+        ></div>
+        <div
+          class="absolute bottom-10 right-10 w-40 h-40 bg-purple-500 rounded-full blur-3xl"
+        ></div>
+      </div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 items-start">
+          <!-- Logo + Tagline -->
+          <div class="flex flex-col items-start fade-in-up">
+            <div class="mb-6">
+              <img
+                src="./image/logo.png"
+                alt="Logo"
+                class="w-14 h-14 logo-glow transition-all duration-300 hover:scale-110"
+              />
+            </div>
+            <h3 class="text-xl font-bold text-white mb-3 gradient-text">
+              Alvin Khoirul
+            </h3>
+            <p class="text-sm leading-relaxed text-gray-400 max-w-xs">
+              Membangun solusi digital modern dengan sentuhan desain dan
+              fungsionalitas yang maksimal untuk masa depan yang lebih baik.
+            </p>
+            <div class="mt-6 flex items-center space-x-2 text-xs text-gray-500">
+              <div
+                class="w-2 h-2 bg-green-500 rounded-full animate-pulse"
+              ></div>
+              <span>Tersedia untuk proyek baru</span>
+            </div>
+          </div>
+
+          <!-- Navigation -->
+          <div class="fade-in-up">
+            <h4 class="text-xl font-bold text-white mb-6 flex items-center">
+              <i class="fas fa-compass mr-2 text-blue-400"></i>
+              Navigasi
+            </h4>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="#home"
+                  class="nav-link text-gray-300 hover:text-blue-400 transition flex items-center group"
+                >
+                  <i
+                    class="fas fa-home mr-3 text-sm group-hover:text-blue-400 transition"
+                  ></i>
+                  <span>Home</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#profile"
+                  class="nav-link text-gray-300 hover:text-blue-400 transition flex items-center group"
+                >
+                  <i
+                    class="fas fa-user mr-3 text-sm group-hover:text-blue-400 transition"
+                  ></i>
+                  <span>Profile</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#skills"
+                  class="nav-link text-gray-300 hover:text-blue-400 transition flex items-center group"
+                >
+                  <i
+                    class="fas fa-code mr-3 text-sm group-hover:text-blue-400 transition"
+                  ></i>
+                  <span>Skills</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#portofolio"
+                  class="nav-link text-gray-300 hover:text-blue-400 transition flex items-center group"
+                >
+                  <i
+                    class="fas fa-briefcase mr-3 text-sm group-hover:text-blue-400 transition"
+                  ></i>
+                  <span>Portofolio</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="nav-link text-gray-300 hover:text-blue-400 transition flex items-center group"
+                >
+                  <i
+                    class="fas fa-envelope mr-3 text-sm group-hover:text-blue-400 transition"
+                  ></i>
+                  <span>Contact</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Social Media -->
+          <div class="fade-in-up">
+            <h4 class="text-xl font-bold text-white mb-6 flex items-center">
+              <i class="fas fa-share-alt mr-2 text-blue-400"></i>
+              Terhubung
+            </h4>
+            <p class="text-sm mb-6 text-gray-400">
+              Mari berkolaborasi dan berbagi inspirasi di platform berikut:
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="https://github.com/allpynn"
+                target="_blank"
+                class="social-icon bg-gray-800 hover:bg-gray-700 text-gray-400 hover:text-white p-3 rounded-full text-lg border border-gray-700 hover:border-gray-600 transition-all duration-300"
+                title="GitHub"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+              <a
+                href="#"
+                class="social-icon bg-gray-800 hover:bg-blue-600 text-gray-400 hover:text-white p-3 rounded-full text-lg border border-gray-700 hover:border-blue-500 transition-all duration-300"
+                title="LinkedIn"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a
+                href="#"
+                class="social-icon bg-gray-800 hover:bg-pink-600 text-gray-400 hover:text-white p-3 rounded-full text-lg border border-gray-700 hover:border-pink-500 transition-all duration-300"
+                title="Instagram"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+
+            <!-- Quick Contact -->
+            <div class="mt-8 p-4 bg-gray-800 rounded-lg border border-gray-700">
+              <h5 class="text-white font-semibold mb-2 flex items-center">
+                <i class="fas fa-rocket mr-2 text-blue-400"></i>
+                Punya Proyek?
+              </h5>
+              <p class="text-xs text-gray-400 mb-3">
+                Diskusikan ide Anda bersama saya
+              </p>
+              <a
+                href="#contact"
+                class="inline-flex items-center text-blue-400 hover:text-blue-300 text-sm font-medium transition"
+              >
+                Mulai Diskusi
+                <i class="fas fa-arrow-right ml-2"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="border-t border-gray-700 mt-16 pt-8">
+          <div
+            class="flex flex-col md:flex-row justify-between items-center text-sm text-gray-500"
+          >
+            <div class="flex items-center mb-4 md:mb-0">
+              <i class="fas fa-coffee mr-2 text-amber-500"></i>
+              <span
+                >© 2025 Alvin Khoirul. Dibuat dengan semangat dan secangkir
+                kopi.</span
+              >
+            </div>
+            <div class="flex items-center space-x-6 text-xs">
+              <span class="flex items-center">
+                <i class="fas fa-heart text-red-500 mr-1"></i>
+                Made with love
+              </span>
+              <span class="flex items-center">
+                <i class="fas fa-code text-blue-400 mr-1"></i>
+                Clean Code
+              </span>
+              <span class="flex items-center">
+                <i class="fas fa-mobile-alt text-green-500 mr-1"></i>
+                Responsive
+              </span>
+            </div>
+          </div>
+        </div>
       </div>
     </footer>
 

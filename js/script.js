@@ -181,3 +181,43 @@ document.addEventListener("DOMContentLoaded", function () {
     document.body.classList.add("transition-opacity", "duration-500");
   }, 100);
 });
+
+// Add scroll-triggered animations
+const observerOptions = {
+  threshold: 0.1,
+  rootMargin: "0px 0px -50px 0px",
+};
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.style.opacity = "1";
+      entry.target.style.transform = "translateY(0)";
+    }
+  });
+}, observerOptions);
+
+document.querySelectorAll(".fade-in-up").forEach((el) => {
+  el.style.opacity = "0";
+  el.style.transform = "translateY(20px)";
+  el.style.transition = "opacity 0.6s ease, transform 0.6s ease";
+  observer.observe(el);
+});
+
+// Add ripple effect to social icons
+document.querySelectorAll(".social-icon").forEach((icon) => {
+  icon.addEventListener("click", function (e) {
+    let ripple = document.createElement("span");
+    let rect = this.getBoundingClientRect();
+    let size = Math.max(rect.width, rect.height);
+    ripple.style.width = ripple.style.height = size + "px";
+    ripple.style.left = e.clientX - rect.left - size / 2 + "px";
+    ripple.style.top = e.clientY - rect.top - size / 2 + "px";
+    ripple.classList.add("ripple");
+    this.appendChild(ripple);
+
+    setTimeout(() => {
+      ripple.remove();
+    }, 600);
+  });
+});
