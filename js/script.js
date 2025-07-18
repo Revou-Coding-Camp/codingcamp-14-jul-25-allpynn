@@ -23,12 +23,14 @@ contactForm.addEventListener("submit", function (e) {
 
   // Tampilkan hasil di form results
   resultsContent.innerHTML = `
-    <p><strong>Waktu Submit:</strong> ${waktu}</p>
-    <p><strong>Nama:</strong> ${nama}</p>
-    <p><strong>Tanggal Lahir:</strong> ${tanggal}</p>
-    <p><strong>Jenis Kelamin:</strong> ${gender.value}</p>
-    <p><strong>Pesan:</strong> ${pesan}</p>
-  `;
+  <p><strong>Waktu Submit:</strong> ${waktu}</p>
+  <p><strong>Nama:</strong> ${nama}</p>
+  <p><strong>Tanggal Lahir:</strong> ${tanggal}</p>
+  <p><strong>Jenis Kelamin:</strong> ${gender.value}</p>
+  <p><strong>Pesan:</strong> ${pesan}</p>
+`;
+
+  document.getElementById("form-results").classList.remove("hidden");
 
   showSuccessMessage();
   contactForm.reset();

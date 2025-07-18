@@ -5,13 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Website - Company Profile</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body class="bg-gray-50">
+  <body class="bg-gray-900 text-white">
     <!-- Navigation -->
-    <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
+    <nav class="fixed top-0 w-full z-50 glass-effect">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between items-center h-16">
+        <div class="flex items-center justify-between h-16">
           <!-- Logo -->
           <div class="flex items-center">
             <div class="flex items-center justify-center">
@@ -27,22 +31,27 @@
           <div class="hidden md:flex space-x-8">
             <a
               href="#home"
-              class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors"
+              class="nav-link text-white-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors"
               >Home</a
             >
             <a
               href="#profile"
-              class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors"
+              class="nav-link text-white-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors"
               >Our Profile</a
             >
             <a
-              href="#portfolio"
+              href="#skills"
+              class="nav-link text-white-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors"
+              >Skills</a
+            >
+            <a
+              href="#portofolio"
               class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors"
-              >Portfolio</a
+              >Portofolio</a
             >
             <a
               href="#contact"
-              class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors"
+              class="nav-link text-white-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors"
               >Message Us</a
             >
           </div>
@@ -81,22 +90,27 @@
         <div class="px-2 pt-2 pb-3 space-y-1">
           <a
             href="#home"
-            class="nav-link block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 rounded-md"
+            class="nav-link block px-3 py-2 text-base font-medium text-white-700 hover:text-blue-600 hover:bg-gray-50 rounded-md"
             >Home</a
           >
           <a
             href="#profile"
-            class="nav-link block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 rounded-md"
+            class="nav-link block px-3 py-2 text-base font-medium text-white-700 hover:text-blue-600 hover:bg-gray-50 rounded-md"
             >Our Profile</a
           >
           <a
+            href="#skills"
+            class="nav-link block px-3 py-2 text-base font-medium text-white-700 hover:text-blue-600 hover:bg-gray-50 rounded-md"
+            >skills</a
+          >
+          <a
             href="#portfolio"
-            class="nav-link block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 rounded-md"
+            class="nav-link block px-3 py-2 text-base font-medium text-white-700 hover:text-blue-600 hover:bg-gray-50 rounded-md"
             >Portfolio</a
           >
           <a
             href="#contact"
-            class="nav-link block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 rounded-md"
+            class="nav-link block px-3 py-2 text-base font-medium text-white-700 hover:text-blue-600 hover:bg-gray-50 rounded-md"
             >Message Us</a
           >
         </div>
@@ -110,291 +124,326 @@
         id="home"
         class="h-[578px] w-screen bg-[linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('https://images.unsplash.com/photo-1499088513455-78ed88b7a5b4?q=80&w=1078&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center flex items-center justify-center text-white"
       >
-        <div class="text-center px-4">
-          <h1 class="text-5xl md:text-6xl font-bold text-white-700 mb-4">
-            Hi <span id="user-name" class="text-blue-600">Hari</span>, Welcome
-            To Website
+        <div class="text-center">
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4">
+            Halo
+            <span class="text-accent text-yellow-600" id="user-name">
+              Alvin Khoirul
+            </span>
           </h1>
-          <p class="text-xl text-blue-300 mb-8">
-            Ini adalah website dengan design terbaik
-          </p>
-          <div class="flex justify-center">
-            <button
-              class="bg-blue-600 text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-colors shadow-lg"
-            >
-              Learn More
-            </button>
-          </div>
+          <p class="text-xl sm:text-2xl mb-8">Welcome To My Website</p>
         </div>
       </section>
 
-      <!-- Our Headquarter Section -->
-      <section class="py-16 bg-white">
+      <!-- About Section -->
+      <section id="profile" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">
-            Our Headquarter
-          </h2>
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <!-- Jakarta -->
-            <div class="text-center">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 class="text-3xl font-bold text-gray-800 mb-6">
+                Tentang Saya
+              </h2>
+              <p class="text-gray-600 mb-6">
+                Saya adalah seorang developer yang berpengalaman dalam
+                menciptakan website modern dan aplikasi web yang responsif
+                dengan teknologi terkini.
+              </p>
+              <p class="text-gray-600 mb-6">
+                Saya memiliki passion yang besar dalam menciptakan solusi
+                digital yang tidak hanya fungsional tetapi juga memberikan
+                pengalaman pengguna yang optimal.
+              </p>
+              <div class="grid grid-cols-2 gap-4 mb-6">
+                <div class="bg-gray-50 p-4 rounded-lg">
+                  <h4 class="font-semibold text-gray-800 mb-2">
+                    Frontend Development
+                  </h4>
+                  <p class="text-sm text-gray-600">
+                    HTML, CSS, JavaScript, React
+                  </p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                  <h4 class="font-semibold text-gray-800 mb-2">
+                    Backend Development
+                  </h4>
+                  <p class="text-sm text-gray-600">PHP, Python, MySQL</p>
+                </div>
+              </div>
+            </div>
+            <div class="flex justify-center lg:justify-end pl-8">
+              <figure
+                class="relative max-w-sm transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0 ml-auto"
+              >
+                <a>
+                  <img
+                    class="rounded-lg"
+                    src="./image/foto.JPG"
+                    alt="image description"
+                  />
+                </a>
+              </figure>
+            </div>
+          </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-5">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div
+              class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow"
+            >
               <div
-                class="w-32 h-32 bg-gray-200 rounded-full mx-auto mb-4 flex items-center justify-center"
+                class="w-16 h-16 bg-primary rounded-lg flex items-center justify-center mb-6"
               >
                 <svg
-                  class="w-16 h-16 text-gray-400"
-                  fill="none"
-                  stroke="currentColor"
+                  class="w-8 h-8 text-white"
+                  fill="currentColor"
                   viewBox="0 0 24 24"
                 >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
-                  ></path>
+                  <path d="M12 2L2 7V17L12 22L22 17V7L12 2Z" />
                 </svg>
               </div>
-              <h3 class="text-xl font-semibold text-gray-800 mb-2">Jakarta</h3>
-              <p class="text-gray-600">
-                Jl. Sudirman No. 123<br />Jakarta Pusat, 10220
-              </p>
+              <h3 class="text-xl font-bold text-gray-800 mb-4">
+                Frontend Development
+              </h3>
+              <div class="space-y-3">
+                <div class="flex justify-between items-center">
+                  <span class="text-gray-600">HTML/CSS</span>
+                  <span class="text-primary font-medium">95%</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2">
+                  <div
+                    class="bg-primary h-2 rounded-full"
+                    style="width: 95%"
+                  ></div>
+                </div>
+                <div class="flex justify-between items-center">
+                  <span class="text-gray-600">JavaScript</span>
+                  <span class="text-primary font-medium">90%</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2">
+                  <div
+                    class="bg-primary h-2 rounded-full"
+                    style="width: 90%"
+                  ></div>
+                </div>
+                <div class="flex justify-between items-center">
+                  <span class="text-gray-600">React.js</span>
+                  <span class="text-primary font-medium">85%</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2">
+                  <div
+                    class="bg-primary h-2 rounded-full"
+                    style="width: 85%"
+                  ></div>
+                </div>
+              </div>
             </div>
 
-            <!-- Bandung -->
-            <div class="text-center">
+            <div
+              class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow"
+            >
               <div
-                class="w-32 h-32 bg-gray-200 rounded-full mx-auto mb-4 flex items-center justify-center"
+                class="w-16 h-16 bg-secondary rounded-lg flex items-center justify-center mb-6"
               >
                 <svg
-                  class="w-16 h-16 text-gray-400"
-                  fill="none"
-                  stroke="currentColor"
+                  class="w-8 h-8 text-white"
+                  fill="currentColor"
                   viewBox="0 0 24 24"
                 >
                   <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
-                  ></path>
+                    d="M4 4H20C20.55 4 21 4.45 21 5V19C21 19.55 20.55 20 20 20H4C3.45 20 3 19.55 3 19V5C3 4.45 3.45 4 4 4Z"
+                  />
                 </svg>
               </div>
-              <h3 class="text-xl font-semibold text-gray-800 mb-2">Bandung</h3>
-              <p class="text-gray-600">
-                Jl. Asia Afrika No. 456<br />Bandung, 40111
-              </p>
+              <h3 class="text-xl font-bold text-gray-800 mb-4">
+                Backend Development
+              </h3>
+              <div class="space-y-3">
+                <div class="flex justify-between items-center">
+                  <span class="text-gray-600">PHP</span>
+                  <span class="text-secondary font-medium">88%</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2">
+                  <div
+                    class="bg-secondary h-2 rounded-full"
+                    style="width: 88%"
+                  ></div>
+                </div>
+                <div class="flex justify-between items-center">
+                  <span class="text-gray-600">Database</span>
+                  <span class="text-secondary font-medium">85%</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2">
+                  <div
+                    class="bg-secondary h-2 rounded-full"
+                    style="width: 85%"
+                  ></div>
+                </div>
+              </div>
             </div>
 
-            <!-- Surabaya -->
-            <div class="text-center">
+            <div
+              class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow"
+            >
               <div
-                class="w-32 h-32 bg-gray-200 rounded-full mx-auto mb-4 flex items-center justify-center"
+                class="w-16 h-16 bg-accent rounded-lg flex items-center justify-center mb-6"
               >
                 <svg
-                  class="w-16 h-16 text-gray-400"
-                  fill="none"
-                  stroke="currentColor"
+                  class="w-8 h-8 text-white"
+                  fill="currentColor"
                   viewBox="0 0 24 24"
                 >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
-                  ></path>
+                  <path d="M9 11H7V9H5V7H7V5H9V7H11V9H9V11Z" />
                 </svg>
               </div>
-              <h3 class="text-xl font-semibold text-gray-800 mb-2">Surabaya</h3>
-              <p class="text-gray-600">
-                Jl. Tunjungan No. 789<br />Surabaya, 60261
-              </p>
+              <h3 class="text-xl font-bold text-gray-800 mb-4">UI/UX Design</h3>
+              <div class="space-y-3">
+                <div class="flex justify-between items-center">
+                  <span class="text-gray-600">Figma</span>
+                  <span class="text-accent font-medium">90%</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2">
+                  <div
+                    class="bg-accent h-2 rounded-full"
+                    style="width: 90%"
+                  ></div>
+                </div>
+                <div class="flex justify-between items-center">
+                  <span class="text-gray-600">Prototyping</span>
+                  <span class="text-accent font-medium">80%</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2">
+                  <div
+                    class="bg-accent h-2 rounded-full"
+                    style="width: 80%"
+                  ></div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       <!-- Our Profile Section -->
-      <section id="profile" class="py-16 bg-gray-100">
+      <section id="portofolio" class="py-10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <!-- Photo Banner -->
-          <div
-            class="relative h-64 md:h-96 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg mb-12 overflow-hidden"
-          >
-            <div class="absolute inset-0 bg-black bg-opacity-40"></div>
-            <div class="relative z-10 h-full flex items-center justify-center">
-              <div class="text-center text-white">
-                <h2 class="text-4xl md:text-5xl font-bold mb-4">
-                  Our Company Profile
-                </h2>
-                <p class="text-xl">Innovation • Excellence • Partnership</p>
-              </div>
-            </div>
+          <div class="text-center mb-16">
+            <h1
+              class="mb-12 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white"
+            >
+              <span
+                class="underline underline-offset-3 decoration-8 decoration-blue-500 dark:decoration-blue-600"
+                >My Projects
+              </span>
+            </h1>
+            <p class="text-xl text-gray-300">Some of my recent work</p>
           </div>
 
-          <!-- About Company -->
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
-            <div>
-              <h3 class="text-3xl font-bold text-gray-800 mb-6">
-                Tentang Perusahaan
-              </h3>
-              <p class="text-gray-600 text-lg leading-relaxed mb-4">
-                Kami adalah perusahaan teknologi terdepan yang berfokus pada
-                pengembangan solusi digital inovatif. Didirikan pada tahun 2015,
-                kami telah melayani lebih dari 500 klien di seluruh Indonesia
-                dan Asia Tenggara.
-              </p>
-              <p class="text-gray-600 text-lg leading-relaxed mb-4">
-                Dengan tim yang terdiri dari lebih dari 100 profesional
-                berpengalaman, kami berkomitmen untuk memberikan layanan terbaik
-                dalam pengembangan aplikasi, website, dan sistem informasi yang
-                dapat meningkatkan efisiensi bisnis klien.
-              </p>
-              <div class="flex flex-wrap gap-4 mt-6">
-                <div
-                  class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold"
-                >
-                  Web Development
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="card-hover bg-gray-700 rounded-xl overflow-hidden">
+              <div
+                class="h-48 bg-gradient-to-br from-purple-500 to-blue-500 flex items-center justify-center"
+              >
+                <i class="fas fa-camera text-4xl text-white"></i>
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-bold mb-2">Web Profile Yoyoknesia</h3>
+                <p class="text-gray-400 mb-4">
+                  Full-stack Webprofile using laravel and filament
+                </p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span
+                    class="bg-red-600 text-white px-2 py-1 rounded-full text-xs"
+                    >Blade</span
+                  >
+                  <span
+                    class="bg-blue-600 text-white px-2 py-1 rounded-full text-xs"
+                    >PHP</span
+                  >
+                  <span
+                    class="bg-purple-600 text-white px-2 py-1 rounded-full text-xs"
+                    >CSS</span
+                  >
+                  <span
+                    class="bg-yellow-600 text-white px-2 py-1 rounded-full text-xs"
+                    >JavaScript</span
+                  >
+                  <span
+                    class="bg-green-600 text-white px-2 py-1 rounded-full text-xs"
+                    >Html</span
+                  >
                 </div>
-                <div
-                  class="bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-semibold"
-                >
-                  Mobile Apps
-                </div>
-                <div
-                  class="bg-purple-100 text-purple-800 px-4 py-2 rounded-full text-sm font-semibold"
-                >
-                  Cloud Solutions
-                </div>
-                <div
-                  class="bg-orange-100 text-orange-800 px-4 py-2 rounded-full text-sm font-semibold"
-                >
-                  UI/UX Design
+                <div class="flex space-x-4">
+                  <a
+                    href="https://github.com/allpynn/Web-Profile-yoyoknesia"
+                    target="_blank"
+                    rel="noopener"
+                    class="text-purple-400 hover:text-purple-300"
+                  >
+                    <i class="fab fa-github"></i> Code
+                  </a>
                 </div>
               </div>
-            </div>
-            <div class="bg-white p-8 rounded-lg shadow-lg">
-              <h4 class="text-2xl font-bold text-gray-800 mb-6">
-                Mengapa Memilih Kami?
-              </h4>
-              <ul class="space-y-4">
-                <li class="flex items-start">
-                  <div
-                    class="bg-blue-500 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mr-3 mt-1"
-                  >
-                    ✓
-                  </div>
-                  <span class="text-gray-600"
-                    >Tim profesional berpengalaman lebih dari 8 tahun</span
-                  >
-                </li>
-                <li class="flex items-start">
-                  <div
-                    class="bg-blue-500 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mr-3 mt-1"
-                  >
-                    ✓
-                  </div>
-                  <span class="text-gray-600"
-                    >Teknologi terkini dan terdepan dalam industri</span
-                  >
-                </li>
-                <li class="flex items-start">
-                  <div
-                    class="bg-blue-500 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mr-3 mt-1"
-                  >
-                    ✓
-                  </div>
-                  <span class="text-gray-600"
-                    >Support 24/7 dan maintenance berkualitas</span
-                  >
-                </li>
-                <li class="flex items-start">
-                  <div
-                    class="bg-blue-500 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mr-3 mt-1"
-                  >
-                    ✓
-                  </div>
-                  <span class="text-gray-600"
-                    >Harga kompetitif dengan kualitas terjamin</span
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- Vision & Mission -->
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <div class="bg-white p-8 rounded-lg shadow-lg">
-              <div class="flex items-center mb-6">
-                <div
-                  class="bg-blue-500 text-white rounded-full w-12 h-12 flex items-center justify-center mr-4"
-                >
-                  <svg
-                    class="w-6 h-6"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
-                    ></path>
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
-                    ></path>
-                  </svg>
-                </div>
-                <h3 class="text-2xl font-bold text-gray-800">
-                  Visi Perusahaan
-                </h3>
-              </div>
-              <p class="text-gray-600 text-lg leading-relaxed">
-                Menjadi perusahaan teknologi terdepan di Asia Tenggara yang
-                menghadirkan solusi digital inovatif untuk meningkatkan kualitas
-                hidup masyarakat dan kemajuan bisnis di era digital.
-              </p>
             </div>
 
-            <div class="bg-white p-8 rounded-lg shadow-lg">
-              <div class="flex items-center mb-6">
-                <div
-                  class="bg-green-500 text-white rounded-full w-12 h-12 flex items-center justify-center mr-4"
-                >
-                  <svg
-                    class="w-6 h-6"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                    ></path>
-                  </svg>
-                </div>
-                <h3 class="text-2xl font-bold text-gray-800">
-                  Misi Perusahaan
-                </h3>
+            <div class="card-hover bg-gray-700 rounded-xl overflow-hidden">
+              <div
+                class="h-48 bg-gradient-to-br from-green-500 to-blue-500 flex items-center justify-center"
+              >
+                <i class="fas fa-shopping-cart text-4xl text-white"></i>
               </div>
-              <div class="text-gray-600 text-lg leading-relaxed">
-                <p class="mb-3">
-                  • Mengembangkan solusi teknologi yang user-friendly dan
-                  berkualitas tinggi
+              <div class="p-6">
+                <h3 class="text-xl font-bold mb-2">Web Booking</h3>
+                <p class="text-gray-400 mb-4">
+                  Real-time booking web using php
                 </p>
-                <p class="mb-3">
-                  • Memberikan layanan konsultasi IT yang komprehensif dan
-                  terpercaya
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span
+                    class="bg-purple-600 text-white px-2 py-1 rounded-full text-xs"
+                    >PHP</span
+                  >
+                </div>
+                <div class="flex space-x-4">
+                  <a
+                    href="https://github.com/allpynn/2200018141-TugasPresensi5-PWD"
+                    target="_blank"
+                    rel="noopener"
+                    class="text-purple-400 hover:text-purple-300"
+                  >
+                    <i class="fab fa-github"></i> Code
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-hover bg-gray-700 rounded-xl overflow-hidden">
+              <div
+                class="h-48 bg-gradient-to-br from-pink-500 to-purple-500 flex items-center justify-center"
+              >
+                <i class="fas fa-mobile-alt text-4xl text-white"></i>
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-bold mb-2">
+                  Mobile Workout Tutorial App
+                </h3>
+                <p class="text-gray-400 mb-4">
+                  Mobile Workout application using Kotlin
                 </p>
-                <p class="mb-3">
-                  • Menciptakan ekosistem digital yang berkelanjutan untuk klien
-                </p>
-                <p>• Berkontribusi dalam transformasi digital Indonesia</p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span
+                    class="bg-pink-600 text-white px-2 py-1 rounded-full text-xs"
+                    >Kotlin</span
+                  >
+                  <span
+                    class="bg-purple-600 text-white px-2 py-1 rounded-full text-xs"
+                    >API</span
+                  >
+                </div>
+                <div class="flex space-x-4">
+                  <a href="#" class="text-purple-400 hover:text-purple-300">
+                    <i class="fab fa-github"></i> Code
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -402,51 +451,62 @@
       </section>
 
       <!-- Message Us Section -->
-      <section id="contact" class="py-16 bg-white">
+      <section id="contact" class="py-10 bg-gray-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">
-            Message Us
-          </h2>
+          <h1
+            class="mb-12 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl text-center dark:text-white"
+          >
+            <span
+              class="underline underline-offset-3 decoration-8 decoration-blue-500 dark:decoration-blue-600"
+              >Message Us
+            </span>
+          </h1>
+
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <!-- Form -->
-            <div class="bg-gray-50 p-8 rounded-lg shadow-lg">
+            <div class="bg-gray-800 p-8 rounded-lg shadow-lg">
               <form id="contact-form" class="space-y-6">
+                <!-- Nama -->
                 <div>
                   <label
                     for="name"
-                    class="block text-sm font-medium text-gray-700 mb-2"
-                    >Name</label
+                    class="block text-sm font-medium text-white mb-2"
                   >
+                    Nama
+                  </label>
                   <input
                     type="text"
                     id="name"
                     name="name"
                     required
-                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    class="w-full px-4 py-3 rounded-lg bg-gray-700 text-white placeholder-gray-400 border border-gray-600 focus:ring-2 focus:ring-purple-500 focus:outline-none"
                   />
                 </div>
 
+                <!-- Tanggal Lahir -->
                 <div>
                   <label
                     for="date"
-                    class="block text-sm font-medium text-gray-700 mb-2"
-                    >Tanggal Lahir</label
+                    class="block text-sm font-medium text-white-700 mb-2"
                   >
+                    Tanggal Lahir
+                  </label>
                   <input
                     type="date"
                     id="date"
                     name="date"
                     required
-                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    class="w-full px-4 py-3 rounded-lg bg-gray-700 text-white placeholder-gray-400 border border-gray-600 focus:ring-2 focus:ring-purple-500 focus:outline-none"
                   />
                 </div>
 
+                <!-- Jenis Kelamin -->
                 <div>
-                  <label class="block text-sm font-medium text-gray-700 mb-2"
-                    >Jenis Kelamin</label
-                  >
+                  <label class="block text-sm font-medium text-white-700 mb-2">
+                    Jenis Kelamin
+                  </label>
                   <div class="flex space-x-6">
-                    <label class="flex items-center">
+                    <label class="flex items-center text-white-700">
                       <input
                         type="radio"
                         name="gender"
@@ -454,9 +514,9 @@
                         required
                         class="mr-2"
                       />
-                      <span class="text-gray-700">Laki-laki</span>
+                      <span>Laki-laki</span>
                     </label>
-                    <label class="flex items-center">
+                    <label class="flex items-center text-white-700">
                       <input
                         type="radio"
                         name="gender"
@@ -464,38 +524,41 @@
                         required
                         class="mr-2"
                       />
-                      <span class="text-gray-700">Perempuan</span>
+                      <span>Perempuan</span>
                     </label>
                   </div>
                 </div>
 
+                <!-- Pesan -->
                 <div>
                   <label
                     for="message"
-                    class="block text-sm font-medium text-gray-700 mb-2"
-                    >Pesan</label
+                    class="block text-sm font-medium text-white-700 mb-2"
                   >
+                    Pesan
+                  </label>
                   <textarea
                     id="message"
                     name="message"
                     rows="5"
                     required
-                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none"
+                    class="w-full px-4 py-3 rounded-lg bg-gray-700 text-white placeholder-gray-400 border border-gray-600 focus:ring-2 focus:ring-purple-500 focus:outline-none"
                   ></textarea>
                 </div>
 
+                <!-- Tombol Submit -->
                 <button
                   type="submit"
-                  class="w-full bg-blue-600 text-white py-3 px-6 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-colors"
+                  class="w-full bg-purple-600 hover:bg-purple-700 text-white py-3 px-6 rounded-lg font-semibold transition-colors transform hover:scale-105"
                 >
-                  Submit
+                  Send Message
                 </button>
               </form>
             </div>
 
             <!-- Form Results -->
             <div class="space-y-8">
-              <div id="form-results" class="bg-green-50 p-6 rounded-lg">
+              <div id="form-results" class="bg-green-50 p-6 rounded-lg mt-8">
                 <h3 class="text-xl font-bold text-gray-800 mb-4">
                   Form Submission Results
                 </h3>
