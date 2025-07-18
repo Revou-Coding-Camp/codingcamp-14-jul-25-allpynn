@@ -46,7 +46,7 @@
             >
             <a
               href="#portofolio"
-              class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors"
+              class="nav-link text-white-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors"
               >Portofolio</a
             >
             <a
@@ -119,54 +119,107 @@
 
     <!-- Main Content -->
     <main class="pt-16">
-      <!-- Home Section -->
+      <!-- Modal Input Nama -->
+      <div
+        id="name-modal"
+        class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
+      >
+        <div class="bg-white rounded-lg shadow-lg p-6 w-full max-w-md">
+          <h2 class="text-xl font-bold mb-4">Masukkan Nama Anda</h2>
+          <input
+            type="text"
+            id="name-input"
+            class="border border-gray-300 rounded w-full px-3 py-2 mb-4"
+            placeholder="Nama Anda"
+          />
+          <button
+            id="submit-name"
+            class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700"
+          >
+            Submit
+          </button>
+        </div>
+      </div>
+      <!-- Banner Section -->
       <section
         id="home"
-        class="h-[578px] w-screen bg-[linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('https://images.unsplash.com/photo-1499088513455-78ed88b7a5b4?q=80&w=1078&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center flex items-center justify-center text-white"
+        class="min-h-screen flex items-center justify-center relative overflow-hidden bg-cover bg-center"
+        style="
+          background-image: url('https://images.unsplash.com/photo-1707924962886-12ad20367315?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+        "
       >
-        <div class="text-center">
-          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4">
+        <!-- Blur Light Effects -->
+        <div class="absolute inset-0 bg-black/50 z-0"></div>
+        <div class="absolute inset-0 opacity-20 z-0">
+          <div
+            class="absolute top-1/4 left-1/4 w-64 h-64 bg-purple-500 rounded-full filter blur-3xl animate-pulse-custom"
+          ></div>
+          <div
+            class="absolute top-3/4 right-1/4 w-64 h-64 bg-blue-500 rounded-full filter blur-3xl animate-pulse-custom"
+            style="animation-delay: 1s"
+          ></div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="text-center z-10 animate-fadeInUp">
+          <h1
+            class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white"
+          >
             Halo
-            <span class="text-accent text-yellow-600" id="user-name">
-              Alvin Khoirul
-            </span>
+            <span
+              class="underline underline-offset-3 decoration-8 decoration-blue-500 dark:decoration-blue-600"
+              id="user-name"
+              >world’s potential</span
+            >
           </h1>
-          <p class="text-xl sm:text-2xl mb-8">Welcome To My Website</p>
+          <p
+            class="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400"
+          >
+            Terima kasih telah berkunjung. Kami siap bantu kebutuhanmu.
+          </p>
         </div>
       </section>
 
       <!-- About Section -->
-      <section id="profile" class="py-20 bg-white">
+      <section id="profile" class="py-20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 class="text-3xl font-bold text-gray-800 mb-6">
-                Tentang Saya
-              </h2>
-              <p class="text-gray-600 mb-6">
+              <h1
+                class="mb-12 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white"
+              >
+                <span
+                  class="underline underline-offset-3 decoration-8 decoration-blue-500 dark:decoration-blue-600"
+                  >Tentang Saya
+                </span>
+              </h1>
+              <p class="text-gray-400 mb-6">
                 Saya adalah seorang developer yang berpengalaman dalam
                 menciptakan website modern dan aplikasi web yang responsif
                 dengan teknologi terkini.
               </p>
-              <p class="text-gray-600 mb-6">
-                Saya memiliki passion yang besar dalam menciptakan solusi
-                digital yang tidak hanya fungsional tetapi juga memberikan
-                pengalaman pengguna yang optimal.
+              <p class="text-gray-400 mb-6">
+                Saya selalu tertarik dengan teknologi terbaru dan terus belajar
+                untuk mengembangkan skill saya. Fokus utama saya adalah
+                menciptakan user experience yang luar biasa dengan desain yang
+                menarik dan fungsionalitas yang optimal.
               </p>
               <div class="grid grid-cols-2 gap-4 mb-6">
-                <div class="bg-gray-50 p-4 rounded-lg">
-                  <h4 class="font-semibold text-gray-800 mb-2">
+                <div class="card-hover bg-gray-700 p-6 rounded-xl">
+                  <i class="fas fa-code text-3xl text-purple-400 mb-4"></i>
+                  <h4 class="text-lg font-semibold mb-2">
                     Frontend Development
                   </h4>
-                  <p class="text-sm text-gray-600">
-                    HTML, CSS, JavaScript, React
+                  <p class="text-gray-400 text-sm">
+                    HTML, CSS, JavaScript, React, Tailwind
                   </p>
                 </div>
-                <div class="bg-gray-50 p-4 rounded-lg">
-                  <h4 class="font-semibold text-gray-800 mb-2">
+                <div class="card-hover bg-gray-700 p-6 rounded-xl">
+                  <i class="fas fa-server text-3xl text-purple-400 mb-4"></i>
+                  <h4 class="text-lg font-semibold mb-2">
                     Backend Development
                   </h4>
-                  <p class="text-sm text-gray-600">PHP, Python, MySQL</p>
+                  <p class="text-gray-400 text-sm">Python, PHP, MySQL</p>
                 </div>
               </div>
             </div>
@@ -185,138 +238,242 @@
             </div>
           </div>
         </div>
+      </section>
 
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-5">
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div
-              class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow"
+      <!-- Skills Section -->
+      <section id="skills" class="py-20 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16">
+            <h1
+              class="mb-12 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white"
             >
-              <div
-                class="w-16 h-16 bg-primary rounded-lg flex items-center justify-center mb-6"
-              >
-                <svg
-                  class="w-8 h-8 text-white"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M12 2L2 7V17L12 22L22 17V7L12 2Z" />
-                </svg>
-              </div>
-              <h3 class="text-xl font-bold text-gray-800 mb-4">
-                Frontend Development
+              <span
+                class="underline underline-offset-3 decoration-8 decoration-blue-500 dark:decoration-blue-600"
+                >Skills & Expertise
+              </span>
+            </h1>
+            <p class="text-xl text-gray-300">
+              Technologies and tools I work with
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-12">
+            <div>
+              <h3 class="text-2xl font-bold mb-8 text-purple-400">
+                Technical Skills
               </h3>
-              <div class="space-y-3">
-                <div class="flex justify-between items-center">
-                  <span class="text-gray-600">HTML/CSS</span>
-                  <span class="text-primary font-medium">95%</span>
+              <div class="space-y-6">
+                <!-- JavaScript -->
+                <div class="skill-item">
+                  <div class="flex justify-between mb-2">
+                    <span class="text-white">JavaScript</span>
+                    <span class="text-purple-400">50%</span>
+                  </div>
+                  <div class="w-full bg-gray-700 rounded-full h-2">
+                    <div
+                      class="bg-gradient-to-r from-purple-400 to-blue-400 h-2 rounded-full skill-bar"
+                      style="width: 50%"
+                    ></div>
+                  </div>
                 </div>
-                <div class="w-full bg-gray-200 rounded-full h-2">
-                  <div
-                    class="bg-primary h-2 rounded-full"
-                    style="width: 95%"
-                  ></div>
+
+                <!-- React -->
+                <div class="skill-item">
+                  <div class="flex justify-between mb-2">
+                    <span class="text-white">React</span>
+                    <span class="text-purple-400">55%</span>
+                  </div>
+                  <div class="w-full bg-gray-700 rounded-full h-2">
+                    <div
+                      class="bg-gradient-to-r from-purple-400 to-blue-400 h-2 rounded-full skill-bar"
+                      style="width: 55%"
+                    ></div>
+                  </div>
                 </div>
-                <div class="flex justify-between items-center">
-                  <span class="text-gray-600">JavaScript</span>
-                  <span class="text-primary font-medium">90%</span>
+
+                <!-- PHP -->
+                <div class="skill-item">
+                  <div class="flex justify-between mb-2">
+                    <span class="text-white">PHP</span>
+                    <span class="text-purple-400">90%</span>
+                  </div>
+                  <div class="w-full bg-gray-700 rounded-full h-2">
+                    <div
+                      class="bg-gradient-to-r from-purple-400 to-blue-400 h-2 rounded-full skill-bar"
+                      style="width: 90%"
+                    ></div>
+                  </div>
                 </div>
-                <div class="w-full bg-gray-200 rounded-full h-2">
-                  <div
-                    class="bg-primary h-2 rounded-full"
-                    style="width: 90%"
-                  ></div>
+
+                <!-- Python -->
+                <div class="skill-item">
+                  <div class="flex justify-between mb-2">
+                    <span class="text-white">Python</span>
+                    <span class="text-purple-400">70%</span>
+                  </div>
+                  <div class="w-full bg-gray-700 rounded-full h-2">
+                    <div
+                      class="bg-gradient-to-r from-purple-400 to-blue-400 h-2 rounded-full skill-bar"
+                      style="width: 70%"
+                    ></div>
+                  </div>
                 </div>
-                <div class="flex justify-between items-center">
-                  <span class="text-gray-600">React.js</span>
-                  <span class="text-primary font-medium">85%</span>
+
+                <!-- UI/UX Design -->
+                <div class="skill-item">
+                  <div class="flex justify-between mb-2">
+                    <span class="text-white">UI/UX Design</span>
+                    <span class="text-purple-400">90%</span>
+                  </div>
+                  <div class="w-full bg-gray-700 rounded-full h-2">
+                    <div
+                      class="bg-gradient-to-r from-purple-400 to-blue-400 h-2 rounded-full skill-bar"
+                      style="width: 90%"
+                    ></div>
+                  </div>
                 </div>
-                <div class="w-full bg-gray-200 rounded-full h-2">
-                  <div
-                    class="bg-primary h-2 rounded-full"
-                    style="width: 85%"
-                  ></div>
+
+                <!-- Tailwind CSS -->
+                <div class="skill-item">
+                  <div class="flex justify-between mb-2">
+                    <span class="text-white">Tailwind CSS</span>
+                    <span class="text-purple-400">85%</span>
+                  </div>
+                  <div class="w-full bg-gray-700 rounded-full h-2">
+                    <div
+                      class="bg-gradient-to-r from-purple-400 to-blue-400 h-2 rounded-full skill-bar"
+                      style="width: 85%"
+                    ></div>
+                  </div>
+                </div>
+
+                <!-- C++ -->
+                <div class="skill-item">
+                  <div class="flex justify-between mb-2">
+                    <span class="text-white">C++</span>
+                    <span class="text-purple-400">70%</span>
+                  </div>
+                  <div class="w-full bg-gray-700 rounded-full h-2">
+                    <div
+                      class="bg-gradient-to-r from-purple-400 to-blue-400 h-2 rounded-full skill-bar"
+                      style="width: 70%"
+                    ></div>
+                  </div>
+                </div>
+
+                <!-- Laravel -->
+                <div class="skill-item">
+                  <div class="flex justify-between mb-2">
+                    <span class="text-white">Laravel</span>
+                    <span class="text-purple-400">80%</span>
+                  </div>
+                  <div class="w-full bg-gray-700 rounded-full h-2">
+                    <div
+                      class="bg-gradient-to-r from-purple-400 to-blue-400 h-2 rounded-full skill-bar"
+                      style="width: 80%"
+                    ></div>
+                  </div>
+                </div>
+
+                <!-- Lua -->
+                <div class="skill-item">
+                  <div class="flex justify-between mb-2">
+                    <span class="text-white">Lua</span>
+                    <span class="text-purple-400">60%</span>
+                  </div>
+                  <div class="w-full bg-gray-700 rounded-full h-2">
+                    <div
+                      class="bg-gradient-to-r from-purple-400 to-blue-400 h-2 rounded-full skill-bar"
+                      style="width: 60%"
+                    ></div>
+                  </div>
+                </div>
+
+                <!-- Blender -->
+                <div class="skill-item">
+                  <div class="flex justify-between mb-2">
+                    <span class="text-white">Blender</span>
+                    <span class="text-purple-400">70%</span>
+                  </div>
+                  <div class="w-full bg-gray-700 rounded-full h-2">
+                    <div
+                      class="bg-gradient-to-r from-purple-400 to-blue-400 h-2 rounded-full skill-bar"
+                      style="width: 70%"
+                    ></div>
+                  </div>
                 </div>
               </div>
             </div>
 
-            <div
-              class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow"
-            >
-              <div
-                class="w-16 h-16 bg-secondary rounded-lg flex items-center justify-center mb-6"
-              >
-                <svg
-                  class="w-8 h-8 text-white"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M4 4H20C20.55 4 21 4.45 21 5V19C21 19.55 20.55 20 20 20H4C3.45 20 3 19.55 3 19V5C3 4.45 3.45 4 4 4Z"
-                  />
-                </svg>
-              </div>
-              <h3 class="text-xl font-bold text-gray-800 mb-4">
-                Backend Development
+            <div>
+              <h3 class="text-2xl font-bold mb-8 text-purple-400">
+                Tools & Technologies
               </h3>
-              <div class="space-y-3">
-                <div class="flex justify-between items-center">
-                  <span class="text-gray-600">PHP</span>
-                  <span class="text-secondary font-medium">88%</span>
+              <div class="grid grid-cols-3 gap-4">
+                <!-- Javasript -->
+                <div class="card-hover bg-gray-800 p-4 rounded-xl text-center">
+                  <i class="fab fa-js text-3xl text-blue-400 mb-2"></i>
+                  <div class="text-sm text-gray-300">JavaScript</div>
                 </div>
-                <div class="w-full bg-gray-200 rounded-full h-2">
-                  <div
-                    class="bg-secondary h-2 rounded-full"
-                    style="width: 88%"
-                  ></div>
-                </div>
-                <div class="flex justify-between items-center">
-                  <span class="text-gray-600">Database</span>
-                  <span class="text-secondary font-medium">85%</span>
-                </div>
-                <div class="w-full bg-gray-200 rounded-full h-2">
-                  <div
-                    class="bg-secondary h-2 rounded-full"
-                    style="width: 85%"
-                  ></div>
-                </div>
-              </div>
-            </div>
 
-            <div
-              class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow"
-            >
-              <div
-                class="w-16 h-16 bg-accent rounded-lg flex items-center justify-center mb-6"
-              >
-                <svg
-                  class="w-8 h-8 text-white"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M9 11H7V9H5V7H7V5H9V7H11V9H9V11Z" />
-                </svg>
-              </div>
-              <h3 class="text-xl font-bold text-gray-800 mb-4">UI/UX Design</h3>
-              <div class="space-y-3">
-                <div class="flex justify-between items-center">
-                  <span class="text-gray-600">Figma</span>
-                  <span class="text-accent font-medium">90%</span>
+                <!-- React -->
+                <div class="card-hover bg-gray-800 p-4 rounded-xl text-center">
+                  <i class="fab fa-react text-3xl text-blue-400 mb-2"></i>
+                  <div class="text-sm text-gray-300">React</div>
                 </div>
-                <div class="w-full bg-gray-200 rounded-full h-2">
-                  <div
-                    class="bg-accent h-2 rounded-full"
-                    style="width: 90%"
-                  ></div>
+
+                <!-- Tailwind CSS -->
+                <div class="card-hover bg-gray-800 p-4 rounded-xl text-center">
+                  <i class="fas fa-wind text-3xl text-cyan-400 mb-2"></i>
+                  <div class="text-sm text-gray-300">Tailwind CSS</div>
                 </div>
-                <div class="flex justify-between items-center">
-                  <span class="text-gray-600">Prototyping</span>
-                  <span class="text-accent font-medium">80%</span>
+
+                <!-- PHP -->
+                <div class="card-hover bg-gray-800 p-4 rounded-xl text-center">
+                  <i class="fab fa-php text-3xl text-indigo-400 mb-2"></i>
+                  <div class="text-sm text-gray-300">PHP</div>
                 </div>
-                <div class="w-full bg-gray-200 rounded-full h-2">
-                  <div
-                    class="bg-accent h-2 rounded-full"
-                    style="width: 80%"
-                  ></div>
+
+                <!-- Python -->
+                <div class="card-hover bg-gray-800 p-4 rounded-xl text-center">
+                  <i class="fab fa-python text-3xl text-yellow-400 mb-2"></i>
+                  <div class="text-sm text-gray-300">Python</div>
+                </div>
+
+                <!-- Figma -->
+                <div class="card-hover bg-gray-800 p-4 rounded-xl text-center">
+                  <i class="fab fa-figma text-3xl text-purple-400 mb-2"></i>
+                  <div class="text-sm text-gray-300">Figma</div>
+                </div>
+
+                <!-- HTML -->
+                <div class="card-hover bg-gray-800 p-4 rounded-xl text-center">
+                  <i class="fab fa-html5 text-3xl text-orange-400 mb-2"></i>
+                  <div class="text-sm text-gray-300">HTML</div>
+                </div>
+
+                <!-- C++ -->
+                <div class="card-hover bg-gray-800 p-4 rounded-xl text-center">
+                  <i class="fas fa-code text-3xl text-blue-500 mb-2"></i>
+                  <div class="text-sm text-gray-300">C++</div>
+                </div>
+
+                <!-- Laravel -->
+                <div class="card-hover bg-gray-800 p-4 rounded-xl text-center">
+                  <i class="fas fa-fire text-3xl text-red-500 mb-2"></i>
+                  <div class="text-sm text-gray-300">Laravel</div>
+                </div>
+
+                <!-- Lua -->
+                <div class="card-hover bg-gray-800 p-4 rounded-xl text-center">
+                  <i class="fas fa-moon text-3xl text-blue-300 mb-2"></i>
+                  <div class="text-sm text-gray-300">Lua</div>
+                </div>
+
+                <!-- Blender -->
+                <div class="card-hover bg-gray-800 p-4 rounded-xl text-center">
+                  <i class="fas fa-cube text-3xl text-orange-300 mb-2"></i>
+                  <div class="text-sm text-gray-300">Blender</div>
                 </div>
               </div>
             </div>
@@ -325,7 +482,7 @@
       </section>
 
       <!-- Our Profile Section -->
-      <section id="portofolio" class="py-10">
+      <section id="portofolio" class="py-10 bg-gray-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="text-center mb-16">
             <h1
